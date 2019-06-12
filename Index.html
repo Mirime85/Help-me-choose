@@ -16,6 +16,20 @@ body {background-color: green;}
       </div>
       <button class="add0ption">And</button>
     </div>
+    <div class="resultSection"></div>
     <button>Decide!</button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function() {
+        $(".resultSection").hide()
+
+        var add_option = function() {
+          $(".inputs").append("<input></input>")
+        }
+
+        $(".add0ption").click(add_option)
+      })
+    </script>
   </body>
 </html>
